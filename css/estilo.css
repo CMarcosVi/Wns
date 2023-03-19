@@ -1,0 +1,695 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: none;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00f;
+  border-radius: 1rem;
+}
+
+body {
+  height: 100vh;
+  background: #000;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  padding: 1.5rem;
+  background: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0));
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  align-items: stretch;
+  justify-content: space-around;
+}
+nav button {
+  display: none;
+}
+nav #sigla-empresa {
+  color: #00f;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.5rem;
+}
+nav .nav-bar-list {
+  display: flex;
+  align-items: center;
+  vertical-align: top;
+}
+nav .nav-bar-list .list-bar {
+  display: flex;
+  align-items: center;
+}
+nav .nav-bar-list .list-bar .nav-bar-item {
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  margin: 0rem 2rem;
+  text-decoration: none;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  color: #00f;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-family: "Chakra Petch", sans-serif;
+}
+nav .nav-bar-list .list-bar .nav-bar-item:hover {
+  color: #fff;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+.home {
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.home .wnt {
+  display: flex;
+  align-items: center;
+  font-family: "Chakra Petch", sans-serif;
+  color: #00f;
+  font-size: 3rem;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.home .wnt .net {
+  color: #fff;
+}
+.home .proximo-planos {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Chakra Petch", sans-serif;
+}
+.home .avaliacoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
+}
+.home .avaliacoes .avaliacao {
+  color: #00f;
+}
+.home .avaliacoes .avaliacao .mundo {
+  margin-left: 5px;
+  color: #fff;
+}
+.home .avaliacoes .numero {
+  color: #00f;
+  font-size: 2rem;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.img-marcas {
+  height: 5rem;
+  width: 4.5rem;
+}
+
+.div-marcas {
+  padding: 2rem;
+}
+
+.container-home {
+  background-color: #141414;
+  border-radius: 10px;
+  margin: 6rem 8rem 2.5rem 8rem;
+  padding: 1rem;
+}
+
+#planos {
+  margin-top: -5px;
+  background-color: #00f;
+  padding: 0.5rem;
+}
+#planos .titulo-plano {
+  font-family: "Chakra Petch", sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.lista-planos {
+  display: flex;
+}
+.lista-planos .plano {
+  font-family: "Alata", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgb(0, 0, 0);
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+.lista-planos .plano .container-preco-nome {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(48, 48, 48);
+  box-shadow: rgb(0, 0, 255) 0px 12px 20px -10px;
+  border-radius: 5rem;
+}
+.lista-planos .plano .preco {
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  background-color: #000075;
+  border-radius: 0rem 0rem 10rem 10rem;
+  width: 50%;
+}
+.lista-planos .plano .nome-planos {
+  text-align: center;
+  padding: 1rem;
+}
+
+#delux {
+  height: 70vh;
+  transition: 0.5s;
+  background-image: url(/img/diamante.png);
+  font-family: "Chakra Petch", sans-serif;
+}
+#delux #delux-nome {
+  background-image: url(/img/diamante.png);
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+#ouro {
+  background-image: url(/img/ouro.png);
+  height: 65vh;
+}
+#ouro #ouro-nome {
+  background-image: url(/img/ouro.png);
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+#prata {
+  background-image: url(/img/carvao.png);
+  height: 60vh;
+}
+#prata #prata-nome {
+  background-image: url(/img/carvao.png);
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+#bronze {
+  background-image: url(/img/bronze.png);
+  height: 55vh;
+}
+#bronze #bronze-nome {
+  background-image: url(/img/bronze.png);
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+#delux:hover, #ouro:hover, #prata:hover, #bronze:hover {
+  transition: 0.5s;
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+
+.promossao-extra {
+  display: flex;
+  align-items: center;
+  font-family: "Chakra Petch", sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.especificacoes {
+  background-color: #000;
+  height: 65%;
+  color: #fff;
+  border-radius: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+}
+.especificacoes li {
+  padding: 0.1rem;
+  list-style: none;
+}
+
+.button-consultar {
+  padding: 0.25rem 1rem;
+  margin: 0.5rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1rem;
+  background-color: rgb(0, 0, 255);
+  border-radius: 0.5rem;
+  border-style: none;
+  transition: 0.25s;
+}
+
+.button-consultar:hover {
+  box-shadow: rgb(0, 0, 126) 0px 2px 3px 1px;
+  transition: 0.25s;
+}
+
+.titulo-4 {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  color: white;
+  letter-spacing: 0.25rem;
+}
+
+#delux-titulo {
+  color: red;
+}
+
+#ouro-titulo {
+  color: #ffd700;
+}
+
+#prata-titulo {
+  color: #c0c0c0;
+}
+
+#bronze-titulo {
+  color: #cd7f32;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+  margin-bottom: 2rem;
+}
+
+.chevron {
+  position: absolute;
+  width: 2.1rem;
+  height: 0.48rem;
+  opacity: 0;
+  transform: scale(0.3);
+  -webkit-animation: move-chevron 3s ease-out infinite;
+          animation: move-chevron 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  -webkit-animation: move-chevron 3s ease-out 1s infinite;
+          animation: move-chevron 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  -webkit-animation: move-chevron 3s ease-out 2s infinite;
+          animation: move-chevron 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: #00f;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skewY(30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skewY(-30deg);
+}
+
+@-webkit-keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(4.8rem) scale(0.5);
+  }
+}
+
+@keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(4.8rem) scale(0.5);
+  }
+}
+.div00 {
+  height: 5rem;
+  background-image: linear-gradient(180deg, #00F, #00e, #00d, #00c, #00b, #00a, #009, #008, #007, #006, #005, #004, #003, #002, #001, #000);
+}
+
+.aa {
+  display: flex;
+  flex-direction: column;
+  padding: 5.5rem;
+}
+
+.baixe-o-app {
+  text-align: center;
+}
+
+.sobre-ofertas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Chakra Petch", sans-serif;
+  color: #fff;
+  margin: 5rem;
+}
+
+.dw-ps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  font-family: monospace;
+  padding: 0.25rem 1rem;
+  transition: 0.5s;
+  height: 3rem;
+  width: 12rem;
+  background-color: #141414;
+  color: #fff;
+}
+.dw-ps:hover {
+  transition: 0.5s;
+  background-color: #fff;
+}
+.dw-ps:hover {
+  color: green;
+}
+.dw-ps .img-ps {
+  background-image: url(/img/playstoree.png);
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 3rem;
+  width: 3rem;
+}
+
+.dw-as {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  font-family: monospace;
+  padding: 0.25rem 1rem;
+  transition: 0.5s;
+  height: 3rem;
+  width: 12rem;
+  background-color: #141414;
+  color: #fff;
+}
+.dw-as:hover {
+  transition: 0.5s;
+  background-color: #fff;
+}
+.dw-as:hover {
+  color: #00f;
+}
+.dw-as .img-as {
+  background-image: url(/img/app-storee.png);
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 3rem;
+  width: 3rem;
+}
+
+.onde-baixar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Chakra Petch", sans-serif;
+  border-radius: 30px;
+}
+
+.titulo-sobre-aplicativo {
+  color: #00f;
+  font-size: 2rem;
+  justify-content: center;
+  display: flex;
+  font-family: "Chakra Petch", sans-serif;
+  margin: 2.5rem;
+}
+
+.onde-baixar-2 {
+  padding-left: 0.25rem;
+  color: #fff;
+}
+
+.d {
+  background: radial-gradient(circle, rgb(25, 9, 121) 49%, rgb(0, 10, 36) 97%);
+  background-color: #141414;
+  border-radius: 0.5rem;
+}
+
+.roda-pe {
+  background-color: #141414;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+.roda-pe h1 {
+  color: #fff;
+  font-family: "Chakra Petch", sans-serif;
+}
+.roda-pe ul {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+.roda-pe ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #000;
+  transition: 0.5s;
+  color: #fff;
+}
+.roda-pe ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+}
+.roda-pe ul li a p {
+  color: #fff;
+  text-align: center;
+  transition: 0.5s;
+}
+.roda-pe ul li a p:hover {
+  transition: 0.5s;
+  color: #00f;
+}
+.roda-pe ul li:hover {
+  color: #00f;
+}
+
+.decoration {
+  background-image: linear-gradient(180deg, #00f, rgb(0, 0, 53));
+  border-radius: 0.5rem;
+  height: 2rem;
+  width: 0.5rem;
+  margin-right: 1rem;
+}
+
+.info-extras {
+  display: flex;
+  flex-direction: column;
+  background-color: #141414;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+.info-extras p {
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 1rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0;
+  }
+  nav {
+    display: flex;
+    align-items: stretch;
+  }
+  nav h1 {
+    padding: 0rem 0.5rem;
+    margin-top: 1rem;
+  }
+  nav .nav-bar-list {
+    padding-top: 100px;
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8980392157);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+  }
+  nav .active {
+    display: flex;
+  }
+  nav button {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    background-color: #000;
+    transition: 0.5s;
+    border-radius: 50%;
+    border-color: #00f;
+  }
+  nav button:hover {
+    background-color: #00f;
+    border-radius: 50%;
+    transition: 0.5s;
+    border-style: solid;
+  }
+  nav button div {
+    background-color: #fff;
+    height: 2px;
+    width: 20px;
+    margin: 1px;
+  }
+  nav button input {
+    display: none;
+  }
+  nav button input:checked ~ label .hamburguer {
+    transform: rotate(45deg);
+  }
+  nav button input:checked ~ label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+  }
+  nav button input:checked ~ label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+  }
+  .container-home {
+    background-color: transparent;
+  }
+  .menu {
+    background: #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  .menu .hamburguer {
+    position: relative;
+    display: block;
+    background: #00f;
+    width: 15px;
+    height: 1px;
+    top: 15px;
+    left: 8px;
+    transition: 0.5s ease-in-out;
+  }
+  .lista-planos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .lista-planos li {
+    width: auto;
+  }
+  .lista-planos li .especificacoes {
+    width: 50vh;
+    padding: 1rem;
+  }
+  .onde-baixar {
+    display: flex;
+    flex-direction: column;
+  }
+  .onde-baixar .dw-ps {
+    margin: 1rem;
+  }
+  .onde-baixar .dw-as {
+    margin: 1rem;
+  }
+  .roda-pe {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=estilo.css.map */
