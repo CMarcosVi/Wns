@@ -213,7 +213,7 @@ nav .nav-bar-list .list-bar .nav-bar-item:hover {
 }
 
 #ouro {
-  background-image: url(/img/ouro.png);
+  background-image: url(./img/ouro.png);
   height: 65vh;
 }
 #ouro #ouro-nome {
