@@ -200,7 +200,7 @@ nav .nav-bar-list .list-bar .nav-bar-item:hover {
 #delux {
   height: 70vh;
   transition: 0.5s;
-  background-image: url(img/diamante.png);
+  background-image: url(../img/diamante.png);
   font-family: "Chakra Petch", sans-serif;
 }
 #delux #delux-nome {
