@@ -252,34 +252,34 @@ nav{
 #delux{
     height: 70vh;
     transition: 0.5s;
-    background-image: url(/img/diamante.png);
+    background-image: url(/Wns/img/diamante.png);
     font-family: $font-1;
     #delux-nome{
-        background-image: url(/img/diamante.png);
+        background-image: url(/Wns/img/diamante.png);
         @include img-planos;    
     }
 }
 #ouro{
-    background-image: url(/img/ouro.png);
+    background-image: url(/Wns/img/ouro.png);
     height: 65vh;
     #ouro-nome{
-        background-image: url(/img/ouro.png);
+        background-image: url(/Wns/img/ouro.png);
         @include img-planos;
     }    
 }
 #prata{
-    background-image: url(/img/carvao.png);
+    background-image: url(/Wns/img/carvao.png);
     height: 60vh;
     #prata-nome{
-        background-image: url(/img/carvao.png);
+        background-image: url(/Wns/img/carvao.png);
         @include img-planos;
     }
 }
 #bronze{
-    background-image: url(/img/bronze.png);
+    background-image: url(/Wns/img/bronze.png);
     height: 55vh;
     #bronze-nome{
-        background-image: url(/img/bronze.png);
+        background-image: url(/Wns/img/bronze.png);
         @include img-planos;
     }
 }
@@ -423,7 +423,7 @@ nav{
         color: green;
     }
     .img-ps{
-        background-image: url(/img/playstoree.png);
+        background-image: url(/Wns/img/playstoree.png);
         background-size: 50% 50%;
         background-repeat: no-repeat;
         background-position: center;
@@ -439,7 +439,7 @@ nav{
         color: #00f;
     }
     .img-as{
-        background-image: url(/img/app-storee.png);
+        background-image: url(/Wns/img/app-storee.png);
         background-size: 50% 50%;
         background-repeat: no-repeat;
         background-position: center;
